@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#1a237e" />
+    <title>RaksyeFootball</title>
+    <link
+      rel="shortcut icon"
+      href="assets/icons/icon-512x512.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="indigo darken-4 mb-10" role="navigation">
+        <div class="nav-wrapper container">
+          <a href="#home" class="brand-logo" id="logo-container"
+            >RaksyeFootball</a
+          >
+          <a href="#" class="sidenav-trigger" data-target="nav-mobile">
+            <i class="material-icons">sort</i>
+          </a>
+
+          <ul class="topnav right hide-on-med-and-down"></ul>
+          <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <main>
+      <div class="container" id="content"></div>
+      <div id="timer"></div>
+    </main>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/idb.js"></script>
+    <script src="js/db.js"></script>
+    <script src="service-worker.js"></script>
+    <script src="reqpush.js"></script>
+  </body>
+</html>
